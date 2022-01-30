@@ -57,101 +57,6 @@ header:after {
   margin-top: 28px;
 }
 
-@media (max-width: 1119px) {
-  .menu {
-    display: none;
-  }
-
-  .container {
-    max-width: 700px;
-  }
-
-  .logo {
-    margin-left: 0;
-    width: 160px;
-  }
-
-  .title {
-    font-size: 40px;
-  }
-
-  .header-burger {
-    position: relative;
-    width: 25px;
-    height: 20px;
-    display: block;
-    top: 40px;
-  }
-
-  .header-burger span, .header-burger:after, .header-burger:before {
-    height: 3px;
-    width: 100%;
-    position: absolute;
-    background: #ffffff;
-    margin: 0 auto;
-  }
-
-  .header-burger span {
-    top: 20px;
-  }
-
-  .header-burger:after, .header-burger:before {
-    content: "";
-  }
-
-  .header-burger:after {
-    bottom: 5px;
-  }
-
-  .header-burger:before {
-    top: 5px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1119px) {
-  header {
-    height: 392px;
-
-    background: url("../images/banner-bg-tablet.jpg") left bottom no-repeat;
-    background-size: cover;
-  }
-
-  .trend {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .trend1 {
-    width: 100%;
-  }
-
-  .trend2 {
-    width: 100%;
-  }
-
-  .trend3 {
-    width: 100%;
-  }
-
-  .trend4 {
-    width: 100%;
-  }
-
-  .content {
-    max-width: 700px;
-  }
-
-  .post {
-    width: 390px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .post-list {
-    width: 100%;
-  }
-}
-
 .menu {
   font-family: OpenSans-Regular;
   
@@ -847,19 +752,16 @@ header:after {
   background-size: cover;
 }
 
-.frame-shops {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -20px;
-}
-
 .frame-shop {
-  width: 32%;
+  width: 113%;
   min-height: 260px;
   border: 3px solid #b59f5b;
   padding-top: 35px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 170px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .frame-shop-title {
@@ -998,4 +900,298 @@ header:after {
   font-size: 12px;
   
   color: #999999;
+}
+
+@media (max-width: 1119px) {
+  .menu {
+    display: none;
+  }
+  
+  .header-burger {
+    position: relative;
+    width: 25px;
+    height: 20px;
+    display: block;
+    top: 40px;
+  }
+
+  .header-burger span, .header-burger:after, .header-burger:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #ffffff;
+    margin: 0 auto;
+  }
+
+  .header-burger span {
+    top: 20px;
+  }
+
+  .header-burger:after, .header-burger:before {
+    content: "";
+  }
+
+  .header-burger:after {
+    bottom: 5px;
+  }
+
+  .header-burger:before {
+    top: 5px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  header {
+    height: 392px;
+  
+    background: url("../images/banner-bg-tablet.jpg") left bottom no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    max-width: 700px;
+  }
+
+  .logo {
+    margin-left: 0;
+    width: 160px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+    .trends {
+      min-height: 550px;
+      margin-top: 50px;
+    }
+  
+    .trend {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 500px;
+    }
+  
+    .trend1 {
+      width: 49.8%;
+      height: 247px;
+    }
+  
+    .trend2 {
+      width: 49.8%;
+      height: 247px;
+    }
+  
+    .trend3 {
+      width: 49.8%;
+      height: 247px;
+      margin-top: 5px;
+    }
+  
+    .trend4 {
+      width: 49.8%;
+      height: 247px;
+      margin-top: 5px;
+    }
+  
+    .content {
+      max-width: 700px;
+      margin-top: 50px;
+      display: flex;
+    }
+  
+    .post-list {
+      width: 390px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .post-info {
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+
+    .post-info:after {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-bottom: 14px;
+      margin: auto;
+      
+      border-bottom : 4px solid #eeeeee;
+      font-weight: normal;
+    }
+
+    .shops {
+      max-width: 700px;
+      height: 980px;
+    }
+
+    .shop {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 920px;
+    }
+
+    .shop3 {
+      margin-top: 28px;
+    }
+
+    .frame-shop {
+      margin-top: 170px;
+      margin-left: -20px;
+      margin-right: -20px;
+      width: 113%;
+    }
+}
+
+@media (max-width: 767px) {
+  header {
+    width: 100%;
+    height: 640px;
+
+    background: url("../images/banner-mobile.jpg") left bottom no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    max-width: 330px;
+  }
+
+  .header-menu {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .logo {
+    text-align: center;
+    width: 270px;
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .header-burger {
+    position: absolute;
+    right: 0;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-top: 40px;
+    max-width: 280px;
+  }
+
+  .trends {
+    min-height: 1100px;
+    margin-top: 40px;
+  }
+
+  .trend {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    min-height: 935px;
+  }
+
+  .trend1 {
+    width: 100%;
+    height: 230px;
+  }
+
+  .trend2 {
+    width: 100%;
+    height: 230px;
+    margin-top: 3px;
+  }
+
+  .trend3 {
+    width: 100%;
+    height: 230px;
+    margin-top: 3px;
+  }
+
+  .trend4 {
+    width: 100%;
+    height: 230px;
+    margin-top: 3px;
+  }
+
+  .inside-trend {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 17px;
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-right: 85px;
+  }
+
+  .frame-trend {
+    padding-top: 14px;
+  }
+
+  .frame-trend a {
+    font-size: 16px;
+  }
+
+  .content {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+  }
+
+  .post {
+    width: 100%;
+  }
+
+  .post-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-info {
+    width: 380px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .post-info:after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 14px;
+    margin: auto;
+    
+    border-bottom : 4px solid #eeeeee;
+    font-weight: normal;
+  }
+
+  .side-bar {
+    width: 380px;
+    margin-left: 0;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  .shops {
+    max-width: 380px;
+    min-height: 1390px;
+  }
+
+  .shops-title {
+    font-size: 16px;
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 25px;
+    min-height: 1132px;
+  }
 }
