@@ -902,6 +902,168 @@ header:after {
   color: #999999;
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 9;
+  display: none;
+}
+
+.btn-close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 187px;
+  right: 565px;
+  cursor: pointer;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.popup-conteiner {
+  width: 390px;
+  height: 590px;
+  border: none;
+  background-color: #ffffff;
+  position: absolute;
+  top: 270px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+}
+
+.popup-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: OpenSans-Bold;
+  font-size: 20px;
+  margin-top: 50px;
+  color: #000000;
+}
+
+.popup-title:after {
+  content: "";
+  display: block;
+  width: 64px;
+  padding-bottom: 10px;
+  margin: auto;
+  
+  border-bottom : 4px solid #e1d9bd;
+  font-weight: normal;
+}
+
+.select-group {
+  font-family: OpenSans-Regular;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+  margin-right: 30px;
+  margin-bottom: 27px;
+  margin-left: 30px;
+}
+
+.select-label {
+  margin-bottom: 8px;
+}
+
+.select {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  
+  padding-left: 20px;
+  padding-right: 25px;
+  
+  margin: 0;
+  
+  border: none;
+  background-color: #f4f7f6;
+
+  color: #a5a7a6;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(../svg/form-arrows.svg);
+  background-size: 10px 18px;
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+.popup-radio {
+  font-family: OpenSans-Regular;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-bottom: 17px;
+  margin-left: 30px;
+}
+
+.checkbox-radio {
+  margin-top: 7px;
+}
+
+.checkbox-popup {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.radio-circle {
+  font-family: OpenSans-Regular;
+  font-size: 13px;
+  margin-right: 20px;
+}
+
+.popup-input {
+  font-family: OpenSans-Regular;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.input-text {
+  margin-top: 10px;
+  height: 130px;
+  padding: 20px;
+  color: #707171;
+  background-color: #f4f7f6;
+  border: none;
+}
+
+.popup-btn {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #b59f5b;
+  border: none;
+  margin-top: 27px;
+  margin-right: 30px;
+  margin-bottom: 8px;
+  margin-left: 30px;
+  width: 330px;
+  height: 50px;
+}
+
 @media (max-width: 1119px) {
   .menu {
     display: none;
@@ -1045,6 +1207,23 @@ header:after {
       margin-right: -20px;
       width: 113%;
     }
+
+    .btn-close {
+      width: 25px;
+      height: 30px;
+      right: 230px;
+      top: 85px;
+    }
+
+    .popup-conteiner {
+      width: 360px;
+      height: 580px;
+      top: -350px;
+    }
+
+    .popup-btn {
+      width: 300px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1138,7 +1317,7 @@ header:after {
   }
 
   .content {
-    width: 330px;
+    max-width: 330px;
     display: flex;
     flex-direction: column;
     margin-bottom: 65px;
@@ -1154,8 +1333,12 @@ header:after {
     flex-direction: column;
   }
 
+  .thumb {
+    max-width: 100%;
+  }
+
   .post-info {
-    width: 380px;
+    width: 100%;
     margin-top: 10px;
     margin-left: 0;
   }
@@ -1172,14 +1355,18 @@ header:after {
   }
 
   .side-bar {
-    width: 380px;
+    width: 330px;
     margin-left: 0;
     margin-top: 45px;
     margin-bottom: 45px;
   }
 
+  .tags-item li:nth-child(8) {
+    margin-right: 0;
+  }
+
   .shops {
-    max-width: 380px;
+    width: 330px;
     min-height: 1390px;
   }
 
@@ -1193,5 +1380,22 @@ header:after {
     padding-left: 20px;
     padding-right: 25px;
     min-height: 1132px;
+  }
+
+  .btn-close {
+    width: 30px;
+    height: 30px;
+    top: 35px;
+    right: 20px;
+  }
+  
+  .popup-conteiner {
+    width: 330px;
+    height: 580px;
+    top: -100px;
+  }
+
+  .popup-btn {
+    width: 270px;
   }
 }
