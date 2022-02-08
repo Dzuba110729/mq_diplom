@@ -16,14 +16,14 @@
           <span></span>
         </div>
         <nav class="menu">
-            <ul class="menu-item">
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Посты</a></li>
-              <li><a href="#">Статьи</a></li>
-              <li><a href="#">Теги</a></li>
-              <li><a href="#">Темы</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
+          <ul class="menu-item">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Посты</a></li>
+            <li><a href="#">Статьи</a></li>
+            <li><a href="#">Теги</a></li>
+            <li><a href="#">Темы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
         </nav>
       </div>
       <div class="intro">
@@ -257,7 +257,14 @@
   <div class="shops">
     <h2 class="shops-title"><a href="#">Наши изделия</a></h2>
     <div class="shop">
-      <div class="shop1">
+      <div class="shop-item">
+        <picture>
+          <source media="(min-width: 768px)" 
+                  srcset="images\shop-item-tablet1.jpg">
+          <source media="(min-width: 465px)"
+                  srcset="images\shop-item-mobile1.jpg">
+          <img src="images\shop-item-desk1.jpg" alt="">
+        </picture>
         <div class="frame-shop">
           <h3 class="frame-shop-title"><a href="#">Подушки на диван</a></h3>
           <p class="frame-shop-text">Набор из двух подушек с модными принтами. Видео о создании <a href="#">здесь</a>.</p>
@@ -270,7 +277,14 @@
           </div>
         </div>
       </div>
-      <div class="shop2">
+      <div class="shop-item">
+        <picture>
+          <source media="(min-width: 768px)" 
+                  srcset="images\shop-item-tablet2.jpg">
+          <source media="(min-width: 465px)"
+                  srcset="images\shop-item-mobile2.jpg">
+          <img src="images\shop-item-desk2.jpg" alt="">
+        </picture>
         <div class="frame-shop">
           <h3 class="frame-shop-title"><a href="#">Кукла "зайчик"</a></h3>
           <p class="frame-shop-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#">весенняя серия постов</a> в блоге и несколько подкастов.</p>
@@ -282,7 +296,14 @@
           </div>
         </div>
       </div>
-      <div class="shop3">
+      <div class="shop-item">
+        <picture>
+          <source media="(min-width: 768px)" 
+                  srcset="images\shop-item-tablet3.jpg">
+          <source media="(min-width: 465px)"
+                  srcset="images\shop-item-mobile3.jpg">
+          <img src="images\shop-item-desk3.jpg" alt="">
+        </picture>
         <div class="frame-shop">
           <h3 class="frame-shop-title"><a href="#">Шестиугольная рамка</a></h3>
           <p class="frame-shop-text">Необычная рамка для украшения дома из видео <a href="#">"Как сделать рамку из подручныз средств за 30 минут"</a></p>
@@ -324,8 +345,8 @@
     </div>
   </footer>
   <div class="popup">
-    <img src="../mq_diplom/svg/form-x.svg" alt="close" class="btn-close">
-    <div class="popup-conteiner">
+    <form class="popup-conteiner">
+      <button class="btn-close"></button>
       <div class="popup-title">Ваш фидбек</div>
       <div class="select-group">
         <span class="select-label">Как часто вы заходите на сайт?</span>
@@ -337,20 +358,24 @@
         </select>
       </div>
       <div class="popup-radio">
-        <span class="checkbox-radio">Вы выподписанны на e-mail рассылку?</span>
-        <label class="checkbox-popup">
-          <img src="../mq_diplom/svg/form-circle.svg" class="circle">
-          <p class="radio-circle">Да</p>
-          <img src="../mq_diplom/svg/form-empty-circle.svg" class="circle">
-          <p class="radio-circle">Нет</p>
-        </label>
+        <span class="radio-title">Вы выподписанны на e-mail рассылку?</span>
+        <div class="checkbox-popup">
+          <div class="radio-group">
+            <input type="radio" class="radio" required>
+            <span class="checkbox-text">Да</span>
+          </div>
+          <div class="radio-group">
+            <input type="radio" class="radio" required>
+            <span class="checkbox-text">Нет</span>
+          </div>
+        </div>
       </div>
       <div class="popup-input">
         <span class="popup-input_title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-        <input type="text" value="Может, больше рецептов?" class="input-text">
+        <textarea class="textarea-text">Может, больше рецептов?</textarea>
       </div>
       <button class="popup-btn">Отправить</button>
-    </div>
+    </form>
   </div>
 </body>
 </html>
