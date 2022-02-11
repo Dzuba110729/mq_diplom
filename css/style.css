@@ -758,6 +758,7 @@ header:after {
 
 .shop-item {
   max-width: 300px;
+  display: flex;
   flex-direction: column;
   margin-right: 70px;
 }
@@ -1353,7 +1354,7 @@ header:after {
   }
 
   .post-img {
-    width: 100%;
+    max-width: 100%;
   }
 
   .post-list {
@@ -1397,6 +1398,7 @@ header:after {
   .shop {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-left: 20px;
     padding-right: 25px;
   }
